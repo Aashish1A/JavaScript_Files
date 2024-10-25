@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button id="resolveBtn">Resolve Button</button>
+    <button id="rejectBtn">Reject Button</button>
+    <h2>What are Promises in JavaScript?</h2>
+    <p>
+      A Promise in JavaScript represents a value that may be available now,
+      later, or never. It's used to handle asynchronous operations like API
+      calls, file reading, timers, etc. Promises help avoid callback hell,
+      making the code cleaner and easier to follow.
+    </p>
+
+    <strong>States of a Promise</strong>
+    <ol>
+      A Promise has three states:
+      <li>Pending: The initial state, neither fulfilled nor rejected.</li>
+      <li>Fulfilled: The operation was completed successfully.</li>
+      <li>Rejected: The operation failed.</li>
+    </ol>
+    <strong>Structure of a Promise</strong>
+    <ol>
+      A Promise is created using the new Promise() constructor and takes a
+      function with two parameters:
+      <li>resolve: Call this when the operation completes successfully.</li>
+      <li>reject: Call this when the operation fails.</li>
+    </ol>
+  </body>
+</html>
