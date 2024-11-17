@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -14,4 +15,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+=======
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    color: green;
+    gap: 8px;
+}
+
+.card{
+    width: 70px;
+    height: 80px;
+    background-color: pink;
+    border-radius: 4px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> 7f1803c (Add some lines of practice code)
 }

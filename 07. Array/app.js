@@ -51,3 +51,51 @@ const user1 = {
 const user2 = JSON.parse(JSON.stringify(user1));
 user2.city = "Sonpur";
 console.log(user2);
+
+
+// Find array average, grade, passing and print the result.
+function getAverage(scores) {
+    let sum = 0;
+    for(let i=0; i<scores[i]; i++){
+        sum = sum + scores[i];
+    }
+    return sum / scores.length;
+  }
+  
+function getGrade(score) {
+    if (score === 100) {
+      return "A++";
+    } else if (score >= 90) {
+      return "A";
+    } else if (score >= 80) {
+      return "B";
+    } else if (score >= 70) {
+      return "C";
+    } else if (score >= 60) {
+      return "D";
+    } else {
+      return "F";
+    }
+}
+  
+function hasPassingGrade(score) {
+    if(score>59){
+        return "Passed";
+    }
+    else{
+        return "Failed"
+    }
+  }
+  
+function studentMsg(totalScores, studentScore) {
+    const classAverage = getAverage(totalScores);
+    const studentGrade = getGrade(studentScore);
+    const passed = hasPassingGrade(studentScore);
+    if (passed) {
+      return "Class average: " + classAverage + ". Your grade: " + studentGrade + ". You passed the course.";
+    } 
+    else {
+      return "Class average: " + classAverage + ". Your grade: " + studentGrade + ". You failed the course.";
+    }
+}
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));

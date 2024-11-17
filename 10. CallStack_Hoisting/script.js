@@ -40,3 +40,18 @@ const a = [4,2,5,2,-9,-2,-1,9,8];
 a.forEach( (num, i) => {
     console.log("array num", num, i);
 });
+
+// Hoisting
+// getName();
+// console.log(x);
+// console.log(getName);
+debugger
+var x = 7;
+
+function getName(){
+    console.log("Good Morning Aashish");
+}
+
+getName();
+console.log(x);
+console.log(getName);

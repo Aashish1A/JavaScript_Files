@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -21,4 +22,29 @@ img {
 
 .img-container p{
     margin: 0;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+img {
+    width: 50px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.img-container p{
+    margin: 0;
+>>>>>>> 7f1803c (Add some lines of practice code)
 }

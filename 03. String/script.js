@@ -60,3 +60,8 @@ const templateString = `My last four digit of phone number is ${lastFourDigit.pa
 console.log(templateString);
 const myName = `Remaining value in my account is ₹${lastFourDigit}`;
 console.log(myName);
+
+
+let string = "JavaScript";
+let reverseString = string.split("").reverse().join("");
+console.log(reverseString);
